@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+
+}
+*/
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+    color: white;
+
+}
+h4 {
+    text-transform: uppercase;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.9;
+    padding: 0;
+    
+    
+}
+
+nav ul {
+
+    list-style-type: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #e6e6e6;
+    
+}
+
+/*Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;    
+        flex-wrap: nowrap;
+        background: none;
+        }
+    }
+
+.headerimg img {
+    width: 100%;
+    height: auto;
+}
+
+.headerimg {
+    position: relative;
+}
+
+.headertext {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: white;
+}
+
+.headertext h2 {
+    text-transform: uppercase;
+    color: #BF925B;
+    font-size: 20px;
+}
+
+.headertext h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.headertext button {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    border-color: #BF925B;
+    padding: 1em;
+    background-color: transparent;
+    color: #BF925B;
+    text-transform: uppercase;
+}
+
+.services img {
+    height: 150px;
+    width: 150px;
+    /*
+    position: absolute;
+    top: 300px;
+    */
+}
+
+.services {
+    display: flex;
+    text-align: center;
+    
+}
+
+.styles {
+    background-color: #BF925B;
+    color: white;
+    padding: 2em;
+}
+
+.trim {
+    background-color: #b78649;
+    color: white;
+    padding: 2em;
+}
+
+.shave {
+    background-color: #BF925B;
+    color: white;
+    padding: 2em;
+}
+
+.shampoo {
+    background-color: #b78649 ;
+    color: white;
+    padding: 2em;
