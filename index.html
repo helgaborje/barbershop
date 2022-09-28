@@ -10,13 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700;800&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Barbershop</title>
   </head>
   <body>
     <header>
-      <!--<img src="images/headerimg-1350x600px.png" alt="headerimg" /> !-->
       <nav>
         <h1 class="logotyp">Barbershop</h1>
         <button id="menu-button">Menu</button>
@@ -34,8 +37,7 @@
       <div class="headertext">
         <h2>Welcome to Barbershop</h2>
         <h3>
-          We will make your <br />
-          style of your dreams
+          We will make <span class="outline">your style</span> of your dreams
         </h3>
         <p>
           A small river named Duden folws by their place and supplies it with
@@ -47,8 +49,8 @@
     </header>
 
     <main>
-      <div class="services">
-        <section class="styles">
+      <section class="services">
+        <div class="style1">
           <img src="images/hair-styles.png" alt="hair-styles" />
           <h4>Hair styles</h4>
           <p>
@@ -56,8 +58,8 @@
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts.
           </p>
-        </section>
-        <section class="trim">
+        </div>
+        <div class="style2">
           <img src="images/beard-trim.png" alt="beard-trim" />
           <h4>Beard trim</h4>
           <p>
@@ -65,8 +67,8 @@
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts.
           </p>
-        </section>
-        <section class="shave">
+        </div>
+        <div class="style1">
           <img src="images/hot-shave.png" alt="hot-shave" />
           <h4>Hot shave</h4>
           <p>
@@ -74,8 +76,8 @@
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts.
           </p>
-        </section>
-        <section class="shampoo">
+        </div>
+        <div class="style2">
           <img src="images/hair-shampoo.png" alt="hair-shampoo" />
           <h4>Hair shampoo</h4>
           <p>
@@ -83,68 +85,87 @@
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts.
           </p>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
-    <!--
-        <section class="about">
-            <h5>About Barber</h5>
-                <h6>A smooth barber experience in your town</h6>
-                    <p>Far far away, ehind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind coast of the Semantics,
-                        a large language ocean. A small river named Duden flows by their place and 
-                        supplies it with necessary regelialia.
-                    </p>
-                    <div class="kalender">
+    <section class="about">
+      <div class="about-img">
+        <img src="images/about-480x600px.png" alt="about" />
+      </div>
+      <div class="about-text">
+        <h5>About Barber</h5>
+        <h6>A smooth barber experience in your town</h6>
+        <p>
+          Far far away, ehind the word mountains, far from the countries Vokalia
+          and Consonantia, there live the blind coast of the Semantics, a large
+          language ocean. A small river named Duden flows by their place and
+          supplies it with necessary regelialia.
+        </p>
+        <div class="calender">
+          <img src="icons/calender-icon.png" alt="calender" />
+          <p><span class="years">20</span> years of <br />experience</p>
+        </div>
+      </div>
+    </section>
 
-                    </div>
-        </section>
-        <section class="reviews">
-            <h5>Testimonial</h5>
-                <h6>People say about our Barber</h6>
-                    <p>Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts.
-                    </p>
-                    <p>Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts.
-                    </p>
-                    <p>Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts.
-                    </p>
-        </section>
-   
+    <section class="reviews">
+      <h5>Testimonial</h5>
+      <h6>People say <br />about our Barber</h6>
+      <div class="card">
+        <img src="icons/review-icon.PNG" alt="review" />
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="profile">
+          <img src="icons/profile-pic.PNG" alt="profile-pic" />
+          <div class="profile-text">
+            <!-- Star rating -->
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <h6>Roger Scott</h6>
+            <h5>Customer</h5>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-        <div class="footer1">
-            <h5>Barbershop</h5>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-        </div>
-        <div class="footer2">
-            <h5>Explore</h5>
-                <ul>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Gallery</li>
-                    <li>Blog</li>
-                </ul>
-        </div>
-        <div class="footer3"></div>
-             <h5>Explore</h5>
-                 <ul>
-                    <li>Join us</li>
-                    <li>Make Appointment</li>
-                    <li>Privacy & Policy</li>
-                    <li>Terms & Condition</li>
-                 </ul>
-        <div class="footer4">
-            <h5>Have a question?</h5>
-                <p>203 Fake St. Mountain View, San Francisco, California USA</p>
-                <p>+2 392 3929 210</p>
-                <p>info@yourdomain.com</p>
-        </div>
+      <div class="info">
+        <img src="icons/some-icons.PNG" alt="some" />
+        <!-- <h5>Barbershop</h5>
+        <p>Far far away, behind the word mountains, far from the countries.</p> -->
+      </div>
+      <div class="info">
+        <h5>Explore</h5>
+        <ul>
+          <li>> About</li>
+          <li>> Services</li>
+          <li>> Gallery</li>
+          <li>> Blog</li>
+        </ul>
+      </div>
+      <div class="info">
+        <h5>Info</h5>
+        <ul>
+          <li>> Join us</li>
+          <li>> Make Appointment</li>
+          <li>> Privacy & Policy</li>
+          <li>> Terms & Condition</li>
+        </ul>
+      </div>
+      <div class="info">
+        <h5>Have a question?</h5>
+        <p>203 Fake St. Mountain View, San Francisco, California USA</p>
+        <p>+2 392 3929 210</p>
+        <p>info@yourdomain.com</p>
+      </div>
     </footer>
-     !-->
+
     <script>
       const menuBtn = document.querySelector("#menu-button");
       menuBtn.addEventListener("click", () => {
