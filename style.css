@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -20,8 +21,12 @@ h1 {
     font-weight: 700;
     color: white;
 }
+
 h4 {
     text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.5em;
+    padding: 1em;
 }
 
 h5 {
@@ -38,21 +43,23 @@ h6 {
     font-size: 30px;
     font-weight: 800;
     padding: 10px 0;
-
 }
-    /* Desktop menu
-    @media all and (min-width: 960px) {
-        nav: {
-            flex-direction: row;
 
-            }
-        } */
-
-header nav {
+/* Menu */
+nav {
     display: flex;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.3);
-    padding: 0; 
+    padding: 0;
+    padding-right: 20px;
+    height: 50px;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav ul {
@@ -66,10 +73,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #e6e6e6;
-    
 }
-
-/*Mobile first */
 
 .menu {
     display: flex;
@@ -77,33 +81,11 @@ nav a {
     justify-content: space-between;
     text-align: center;
 }
+
 .menu li a {
     display: block;
     padding: 15px 5px;
 }
-
-button + .menu {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
- 
-button.menu-open + .menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-#menu-button {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    color: #e6e6e6;
-    border-color: transparent;
-    padding: 1em;
-}
-
-
 
 
 .logotyp {
@@ -111,6 +93,7 @@ button.menu-open + .menu {
     margin-left: 20px;
 }
 
+/* Header */
 .headertext {
     position: absolute;
     top: 200px;
@@ -122,7 +105,7 @@ button.menu-open + .menu {
 .outline {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white; 
+    -webkit-text-stroke-color: white;
 }
 
 .headertext h2 {
@@ -140,7 +123,6 @@ button.menu-open + .menu {
 }
 
 .headertext button {
-    
     border-color: #BF925B;
     padding: 1em;
     margin-top: 30px;
@@ -152,68 +134,12 @@ button.menu-open + .menu {
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/headerimg-1350x600px.png') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/headerimg-1350x600px.png') no-repeat center;
     height: 600px;
-    }
-
-    
-
-
-@media and screen (max-width: 1350px) {
-
-    .style1 {
-        flex: 50%;
-        max-width: 100%;
-    }
-    .style2 {
-        flex: 50%;
-        max-width: 100%;
-    }
-    .info {
-        flex: 50%;
-        max-width: 100%;
-    }    
-    /* .about-text {
-        flex: 50%;
-        max-width: 100%;
-    }
-    .about-img {
-        flex: 50%;
-        max-width: 100%; */
-    }
 }
 
-@media and screen (max-width: 600px) {
-    .style1 {
-        max-width: 100%;
-        flex: 100%;
-    }
-    .style2 {
-        max-width: 100%;
-        flex: 100%;
-    }
-    .info {
-        max-width: 100%;
-        flex: 100%;
-    }
-    /* .about-text {
-        flex: 100%;
-        max-width: 100%;
-    }
-    .about-img {
-        flex: 100%;
-        max-width: 100%;
-    } */
-
-    
-}
-
+/* Services */
 .services {
-    /* margin-top: 540px; 
-    display:flex;
-    text-align: center;
-    flex-direction: column;
-    position: relative;*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -225,7 +151,6 @@ header {
     text-align: center;
     padding: 3em;
     padding-bottom: 100px;
-    
 }
 
 .style2 {
@@ -234,8 +159,9 @@ header {
     color: white;
     text-align: center;
     padding: 3em;
-    padding-bottom: 100px;    
+    padding-bottom: 100px;
 }
+
 .style1 img {
     margin-top: -120px;
 }
@@ -245,26 +171,14 @@ header {
 }
 
 
-
 /* About */
- .about {
-    display: flex;
-    padding: 10px;
- }
-
-.about-img {
-    flex: 50%;
-}
- .about-text {
+.about-text {
     padding-left: 10px;
-    width: 400px;
-    flex: 50%;
+}
 
- }
-
- .calender {
+.calender {
     display: flex;
-    background-color:#BF925B;
+    background-color: #BF925B;
     color: white;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
@@ -273,7 +187,7 @@ header {
     line-height: 1em;
     height: 120px;
     margin-top: 40px;
- }
+}
 
 .years {
     display: block;
@@ -281,43 +195,89 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .calender img {
     padding: 20px;
- }
+}
 
- /* Reviews */
- .reviews {
+
+
+/* Reviews */
+.reviews {
     background-color: #eae8de;
     text-align: center;
     height: 600px;
     padding-top: 40px;
-    
- }
+}
 
- .card {
+.card-wrapper {
+    display: flex;
+    position: relative;
+    left: 30px;
+
+}
+
+.card {
+    display: block;
     background-color: white;
     color: #7a7b7a;
     width: 400px;
-    height: 300px;
+    height: 280px;
     text-align: left;
     padding-left: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: 40px;
- }
+}
 
- .card img {
+.card2 {
+    background-color: white;
+    color: #7a7b7a;
+    width: 400px;
+    height: 280px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.card3 {
+    background-color: white;
+    color: #7a7b7a;
+    width: 400px;
+    height: 280px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+.card img {
     width: 50px;
     height: 50px;
     margin-top: -20px;
+}
 
- }
+.card2 img {
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+}
 
- .checked {
+.card3 img {
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+}
+
+.checked {
     color: #BF925B;
- }
+}
 
-.profile{
+.profile {
     display: flex;
     padding-top: 40px;
 }
@@ -326,42 +286,39 @@ header {
     padding: 0;
 }
 
- .profile img {
+.profile img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
-   
- }
+}
 
- .profile h6 {
+.profile h6 {
     font-size: 18px;
     text-transform: capitalize;
     color: black;
     margin-top: 5px;
     line-height: 0;
-    
- }
 
- .profile h5 {
+}
+
+.profile h5 {
     font-size: 14px;
     line-height: 0;
+}
 
- }
+/* Footer */
 
- /* Footer */
-
- footer {
-    display: flex;
-    flex-wrap: wrap;
+footer {
     background-color: black;
     color: white;
     padding: 20px;
-   
- }
+    padding-bottom: 60px;
+}
 
 footer img {
-        height: 50px;
+    height: 50px;
     padding-right: 50px;
+    margin-top: 20px;
 }
 
 footer li {
@@ -374,135 +331,104 @@ footer h5 {
 }
 
 .info {
-    flex: 25%;
-    justify-content: space-evenly;
     padding-right: 40px;
+}
 
+.contact-img img {
+    width: 70px;
+    height: auto;
 }
 
 
-/* header img {
-    display: block;
-    margin: 0 auto;
-    filter: brightness(30%);
-    position: absolute;
-    z-index: -1;
-    } */
-
-    
-/* .styles {
-    background-color: #BF925B;
-    color: white;
-    padding: 3em;
-    padding-bottom: 100px;
-    flex: 25%; */
-    /* float:left;
-    width: 25%; */
-/* } */
 
 
-
-/* .trim {
-    background-color: #b78649;
-    color: white;
-    padding: 3em;
-    padding-bottom: 100px;
-    flex: 25%; */
-    /* float:left;
-    width: 25%; */
-/* } */
-
-
-/* .shave {
-    background-color: #BF925B;
-    color: white;
-    padding: 3em;
-    padding-bottom: 100px;
-    flex: 25%;
-    /* float:left;
-    width: 25%; */
-
-
-
-/* .shampoo {
-    background-color: #b78649 ;
-    color: white;
-    padding: 3em;
-    padding-bottom: 100px;
-    flex: 25%;
-    /* float:left;
-    width: 25%; */
-
-    /* Desktop menu 
-@media all and (max-width: 960px) {
-    .services {
-        flex-direction: row;
-        flex: 100%;
-}
-
-/* Desktop menu 
-@media all and (min-width: 960px) {
-    .menu {
-        align-items: flex-start;    
-        flex-wrap: nowrap;
-        background: none;
-        }
+/* Desktop view */
+@media (min-width: 600px) {
+    .about {
+        display: flex;
     }
 
- @media all and (min-width: 400px) {
-        .menu {
-             align-items: flex-start;    
-             flex-wrap: nowrap;
-              background: none;
-              } 
-                
-            }
-/*
-.headerimg img {
-    width: 100%;
-    height: auto;
-    filter: brightness(50%);
+    .about-text {
+        max-width: 500px;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services {
+        display: flex;
+
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .headertext {}
 }
 
-.headerimg {
-    position: relative;
-}
+@media (min-width: 800px) {
+    .about {
+        position: relative;
+        left: 20%;
+        display: flex;
+    }
 
-.headertext {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    color: white;
-}
+    /* Menu mobile */
+    @media (max-width: 600px) {
+        button+.menu {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
 
-.headertext h2 {
-    text-transform: uppercase;
-    color: #BF925B;
-    font-size: 20px;
-}
+        button.menu-open+.menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            padding-top: 0;
+        }
 
-.headertext h3 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    font-size: 3em;
-    font-weight: 800;
-}
+        button.menu-open {
+            display: flex;
+        }
 
-.headertext button {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 700;
-    border-color: #BF925B;
-    padding: 1em;
-    background-color: transparent;
-    color: #BF925B;
-    text-transform: uppercase;
-}
+        #menu-button {
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+            background-color: transparent;
+            color: #e6e6e6;
+            border-color: transparent;
+            padding: 1em;
+        }
 
-.services img {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 300px;
-    
-}
-*/
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card2 {
+            display: none;
+        }
+
+        .card3 {
+            display: none;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .barber {
+            display: none;
+        }
+
+    }
