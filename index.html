@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Barbershop</title>
   </head>
@@ -21,30 +22,34 @@
       <!-- Menu -->
       <nav>
         <h1 class="logotyp">Barbershop</h1>
-        <button id="menu-button">Menu</button>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="menu-bar">
+          <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+           </ul>
+        </div>
       </nav>
       <!-- Header -->
       <div class="headertext">
         <h2>Welcome to Barbershop</h2>
         <h3>
-          We will make <span class="outline">your style</span> of your dreams
+          We will make <span class="outline">your <br>style</span> of your dreams
         </h3>
-        <p>
-          A small river named Duden folws by their place and supplies it with
-          the necessary regelialia. It is a paradisematic country, in which
-          roasted parts of sentences fly into your mouth.
-        </p>
-        <button>Learn more about us</button>
+        <div class="headertext-button">
+          <p>
+            A small river named Duden folws by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+          <button>Learn more about us</button>
       </div>
+    </div>
     </header>
 
     <!-- Services -->
@@ -104,7 +109,12 @@
           supplies it with necessary regelialia.
         </p>
         <div class="calender">
-          <img src="icons/calender-icon.png" alt="calender">
+          <div class="icon-calendar">
+            <div class="calendar-bg">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+          </div>
+          <!-- <img src="icons/calender-icon.png" alt="calender"> -->
           <p><span class="years">20</span> years of <br>experience</p>
         </div>
       </div>
@@ -190,12 +200,24 @@
     <!-- Footer -->
     <footer>
       <div class="info">
-      <div class="barber">
-        <h5>Barbershop</h5>
-        <p>Far far away, behind the word mountains, <br>far from the countries.</p>
+        <div class="barber">
+          <h5>Barbershop</h5>
+          <p>Far far away, behind the word mountains, <br>far from the countries.</p>
+        </div>
+        <div class="icons-some">
+          <div class="icon-bg">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon-bg">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon-bg">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
-        <img src="icons/some-icons.PNG" alt="some">
       </div>
+   
+
       <div class="info">
         <h5>Explore</h5>
         <ul>
@@ -215,26 +237,28 @@
         </ul>
       </div>
 
-      <!-- <div class="info">
-        <h5>Have a question?</h5>
-        <div class="contact">
-          <img src="icons/map.png" alt=""><p>203 Fake St. Mountain View, San Francisco, California USA</p>
-          <img src="icons/phone.png" alt=""><p>+2 392 3929 210</p>
-          <img src="icons/mail.png" alt=""><p>info@yourdomain.com</p>
-       </div> -->
 
       <div class="info">
         <h5>Have a question?</h5>
         <div class="contact-img">
+          <ul class="contact">
+            <li><span class="fa-map"></span>203 Fake St. Mountain View, <br>San Francisco, California USA</li>
+            <li><span class="fa-phone"></span>+2 392 3929 210</li>
+            <li><span class="fa-paper-plane"></span>info@yourdomain.com</li>
+          </ul>
+        </div>
+      </div>
+         
+      <!-- <div class="info">
+        <h5>Have a question?</h5>
+        <div class="contact-img">
           <div class="contact">
-            <img src="icons/map.png" alt=""><p>203 Fake St. Mountain View, San Francisco, California USA</p>
+            <img src="icons/map.png" alt=""><p>203 Fake St. Mountain View, <br>San Francisco, California USA</p>
             <img src="icons/phone.png" alt=""><p>+2 392 3929 210</p>
             <img src="icons/mail.png" alt=""><p>info@yourdomain.com</p>
         </div>
         </div>
-      </div>
-         
-          
+      </div>     -->
        
       </div>
     </footer>

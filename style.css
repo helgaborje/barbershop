@@ -4,11 +4,9 @@
     margin: 0;
 }
 
-
-
 body {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -17,28 +15,28 @@ p {
 
 h1 {
     text-transform: uppercase;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 700;
     color: white;
 }
 
 h4 {
     text-transform: uppercase;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 1.5em;
     padding: 1em;
 }
 
 h5 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     text-transform: uppercase;
-    color: #BF925B;
+    color: #bf925b;
     font-size: 22px;
     padding-top: 20px;
 }
 
 h6 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 800;
@@ -66,7 +64,7 @@ nav ul {
     list-style-type: none;
     justify-content: space-between;
     text-transform: uppercase;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 700;
 }
 
@@ -79,12 +77,16 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 13px;
 }
 
 .menu li a {
     display: block;
-    padding: 15px 5px;
+    padding: 5px 5px;
+    text-align: right;
 }
 
 
@@ -96,10 +98,11 @@ nav a {
 /* Header */
 .headertext {
     position: absolute;
-    top: 200px;
-    left: 20px;
+    top: 140px;
+    left: 10px;
     color: white;
-    width: 400px;
+    width: 450px;
+    scale: 90%;
 }
 
 .outline {
@@ -110,31 +113,32 @@ nav a {
 
 .headertext h2 {
     text-transform: uppercase;
-    color: #BF925B;
+    color: #bf925b;
     font-size: 16px;
     letter-spacing: 0.1em;
 }
 
 .headertext h3 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .headertext button {
-    border-color: #BF925B;
+    border-color: #bf925b;
     padding: 1em;
     margin-top: 30px;
     background-color: transparent;
-    color: #BF925B;
+    color: #bf925b;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: bold;
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/headerimg-1350x600px.png') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/headerimg-1350x600px.png") no-repeat center;
     height: 600px;
 }
 
@@ -146,7 +150,7 @@ header {
 
 .style1 {
     flex: 25%;
-    background-color: #BF925B;
+    background-color: #bf925b;
     color: white;
     text-align: center;
     padding: 3em;
@@ -163,30 +167,59 @@ header {
 }
 
 .style1 img {
+    /* width: 150px;
+    height: 150px; */
     margin-top: -120px;
 }
 
 .style2 img {
+    /* width: 150px;
+    height: 150px; */
     margin-top: -120px;
 }
-
 
 /* About */
 .about-text {
     padding-left: 10px;
 }
 
+.about img {
+    max-width: 100%;
+}
+
 .calender {
     display: flex;
-    background-color: #BF925B;
+    background-color: #bf925b;
     color: white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     max-width: 350px;
     line-height: 1em;
     height: 120px;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.icon-calendar {
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calendar-bg {
+    display: flex;
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.calendar-bg i {
+    margin: auto;
+    font-size: 2em;
 }
 
 .years {
@@ -200,8 +233,6 @@ header {
     padding: 20px;
 }
 
-
-
 /* Reviews */
 .reviews {
     background-color: #eae8de;
@@ -213,7 +244,8 @@ header {
 .card-wrapper {
     display: flex;
     position: relative;
-    left: 30px;
+    left: 10px;
+    /* scale: 90%; */
 
 }
 
@@ -254,7 +286,6 @@ header {
     margin-top: 40px;
 }
 
-
 .card img {
     width: 50px;
     height: 50px;
@@ -274,7 +305,7 @@ header {
 }
 
 .checked {
-    color: #BF925B;
+    color: #bf925b;
 }
 
 .profile {
@@ -298,7 +329,6 @@ header {
     color: black;
     margin-top: 5px;
     line-height: 0;
-
 }
 
 .profile h5 {
@@ -315,11 +345,33 @@ footer {
     padding-bottom: 60px;
 }
 
-footer img {
+/* footer img {
     height: 50px;
     padding-right: 50px;
     margin-top: 20px;
+} */
+
+.icons-some {
+    width: 200px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.icon-bg {
+    display: flex;
+    background-color: #bf925b;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.icon-bg i {
+    margin: auto;
+}
+
+
+
 
 footer li {
     list-style-type: none;
@@ -334,16 +386,50 @@ footer h5 {
     padding-right: 40px;
 }
 
-.contact-img img {
+/* .contact-img img {
     width: 70px;
     height: auto;
+} */
+
+.fa-map::before {
+    font: var(--fa-font-solid);
+    color: #bf925b;
+    padding-right: 10px;
 }
 
+.fa-phone::before {
+    font: var(--fa-font-solid);
+    color: #bf925b;
+    padding-right: 10px;
+}
 
-
+.fa-paper-plane::before {
+    font: var(--fa-font-solid);
+    color: #bf925b;
+    padding-right: 10px;
+}
 
 /* Desktop view */
 @media (min-width: 600px) {
+    .headertext {
+        left: 50%;
+    }
+
+    .headertext p {
+        padding-left: 50px;
+
+    }
+
+    .headertext-button {
+        border-left: #bf925b 2px solid;
+
+    }
+
+    .headertext button {
+        margin-left: 55px;
+
+    }
+
     .about {
         display: flex;
     }
@@ -361,14 +447,12 @@ footer h5 {
 
     .services {
         display: flex;
-
     }
 
     #menu-button {
         display: none;
-    }
 
-    .headertext {}
+    }
 }
 
 @media (min-width: 800px) {
@@ -377,58 +461,73 @@ footer h5 {
         left: 20%;
         display: flex;
     }
+}
 
-    /* Menu mobile */
-    @media (max-width: 600px) {
-        button+.menu {
-            display: none;
-            opacity: 0;
-            visibility: hidden;
-        }
+@media (min-width: 1000px) {
+    nav {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
 
-        button.menu-open+.menu {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-            padding-top: 0;
-        }
-
-        button.menu-open {
-            display: flex;
-        }
-
-        #menu-button {
-            text-transform: uppercase;
-            font-family: 'Poppins', sans-serif;
-            background-color: transparent;
-            color: #e6e6e6;
-            border-color: transparent;
-            padding: 1em;
-        }
-
-
+/* Menu mobile */
+@media (max-width: 600px) {
+    button+.menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
     }
 
-    @media only screen and (max-width: 600px) {
-        .card2 {
-            display: none;
-        }
-
-        .card3 {
-            display: none;
-        }
-
-        .dot {
-            height: 10px;
-            width: 10px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 5px;
-        }
-
-        .barber {
-            display: none;
-        }
-
+    button.menu-open+.menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        padding-top: 0;
     }
+
+    button.menu-open {
+        /* display: flex; */
+    }
+
+    #menu-button {
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        background-color: transparent;
+        color: #e6e6e6;
+        border-color: transparent;
+        padding-top: 1em;
+    }
+
+    .menu-bar {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card2 {
+        display: none;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .card {
+        scale: 80%;
+    }
+
+    .card-wrapper {}
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .barber {
+        display: none;
+    }
+}
