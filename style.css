@@ -78,9 +78,8 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: right;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin-top: 13px;
+
+    padding: 10px;
 }
 
 .menu li a {
@@ -500,6 +499,12 @@ footer h5 {
 
     .menu-bar {
         text-align: right;
+    }
+
+    .menu {
+        background: rgba(0, 0, 0, 0.3);
+
+        margin-top: 13px;
     }
 }
 
