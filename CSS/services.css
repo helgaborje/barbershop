@@ -1,0 +1,31 @@
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.style1 {
+    flex: 25%;
+    background-color: #bf925b;
+    color: white;
+    text-align: center;
+    padding: 3em;
+    padding-bottom: 100px;
+}
+
+.style2 {
+    flex: 25%;
+    background-color: #b78649;
+    color: white;
+    text-align: center;
+    padding: 3em;
+    padding-bottom: 100px;
+}
+
+.style1 img {
+    margin-top: -120px;
+}
+
+.style2 img {
+    margin-top: -120px;
+}
